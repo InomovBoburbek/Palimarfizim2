@@ -31,7 +31,7 @@ class Electronics(Product):
 class Food(Product):
     def __init__(self, name, price, quantity, surok):
         super().__init__(name, price, quantity)
-        self.sirok = surok
+        self.surok = surok
 
     def info(self):
         data = super().info()
