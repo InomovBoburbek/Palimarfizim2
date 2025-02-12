@@ -9,7 +9,7 @@ class Product:
 
     def sell(self, amount):
         if amount > self.quantity:
-            print(f"Bizda {self.quantity} ta mahsulot bor xolos")
+            print(f"Bizda {self.quantity} ta mahsulot bor ")
         else:
             self.quantity -= amount
 
@@ -29,13 +29,13 @@ class Electronics(Product):
 
 
 class Food(Product):
-    def __init__(self, name, price, quantity, sirok):
-        super().__init__(name, price, quantity, )
-        self.sirok = sirok
+    def __init__(self, name, price, quantity, surok):
+        super().__init__(name, price, quantity)
+        self.sirok = surok
 
     def info(self):
         data = super().info()
-        data += f" || sirok :{self.sirok}"
+        data += f" || sirok :{self.surok}"
         return data
 
 
