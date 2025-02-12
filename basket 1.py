@@ -35,7 +35,7 @@ class Food(Product):
 
     def info(self):
         data = super().info()
-        data += f" || sirok :{self.surok}"
+        data += f" || surok, :{self.surok}"
         return data
 
 
